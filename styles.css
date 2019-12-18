@@ -7,3 +7,8 @@
 .edu-container {
     display: grid;
 }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}

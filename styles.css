@@ -16,13 +16,13 @@
     background-color: #333;
 }
 
-.navbar > ul {  /* remove bullets, padding and margin */
+.navbar ul {  /* remove bullets, padding and margin */
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-.navbar > li {
+.navbar li {
     display: inline;
 }
 

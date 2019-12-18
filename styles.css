@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .edu-container {
@@ -9,6 +10,19 @@
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    background-color: #333;
 }
+
+.navbar > ul {  /* remove bullets, padding and margin */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar > li {
+    display: inline;
+}
+

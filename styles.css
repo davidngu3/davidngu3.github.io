@@ -2,29 +2,58 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    border-color: aquamarine;
+    border-style: solid;
 }
 
+.banner {
+    width: 15vw;
+    height: auto;
+}
+
+.navbar {
+    text-align: center;
+    margin-top: 1vh;
+    margin-right: 3vw;
+    height: 50px;
+}
+
+.navbar > ul {  
+    list-style: none;  /* removes bullet points from list */
+    width: 22em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a { /* styling of all links on page */
+    text-decoration: none;
+    font-family: helvetica;
+    color: peru;
+}
+
+.about {
+    margin-left: 3vw;
+    line-height: 3vh;
+}
+
+.about > h1 {
+    font-size: 3vw;
+    font-family: "Trebuchet MS";
+}
+
+.about > p {
+    font-size: 1vw;
+    width: 60vw;
+    margin-left: 1vw;
+    font-family: helvetica;
+}
 .edu-container {
     display: grid;
 }
 
-.navbar {
-    margin-top: 10px;
-    display: block;
-    height: 50px;
-    line-height: 50px;
-    background-color: #333;
+.contacts {
+    border-color: aquamarine;
+    border-style: solid;
 }
-
-.navbar > ul {  /* remove bullets, padding and margin */
-    width: 20vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.navbar li {
-    display: inline;
-}
-

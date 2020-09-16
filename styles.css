@@ -39,6 +39,7 @@ header {
 }
 
 #profile {
+    margin-top: 200px;
     border-radius: 50%; /* circular picture */
     max-width: 100%; /* scale down if has to, but never larger than original size */
     height: auto;
@@ -47,10 +48,13 @@ header {
 
 #opening {
     color: white;
+    text-align: center;
 }
 
 #about {
     color: white;
+    text-align: center;
+    width: 500px;
 }
 
 header.sticky {

@@ -5,7 +5,7 @@ window.onload = () => {
     // Dynamic typing variables
     var typedTextSpan = document.querySelector(".typed-text");
     var cursorSpan = document.querySelector(".cursor");
-    const textArray = ["CS Student", "Software Eng Intern", "Lifelong Learner", "Game Dev Hobbyist", "Design Enthusiast", "Curious Human", "Tea Snob"]
+    const textArray = ["CS Student", "SoftEng Intern", "Lifelong Learner", "Game Dev Hobbyist", "Design Enthusiast", "Curious Human", "Tea Snob"]
     const typingDelay = 160;
     const erasingDelay = 70;
     const newTextDelay = 2000;

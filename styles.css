@@ -5,6 +5,14 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+    font-family: 'Changa', sans-serif;
+    font-size: 8vh;
+    height: 8vh;
+    line-height: 8vh;
+    text-align: center;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,7 +22,31 @@ body {
     min-height: 400vh;  /* mininimum height is 2x the screen size. */
 }
 
+.typed-text {
+    font-weight: normal;
+    color: #E6B453;
+}
+
+.cursor {
+    display: inline-block; /* allows setting individual width/height */
+    width: 3px;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink { 
+    0% { background-color: #ccc; } 
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    100% { background-color: transparent; }
+}
+
+.cursor.typing {
+    animation: none;
+}
+
 .banner {
+    padding: 0.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,22 +54,20 @@ body {
     width: 100vw;
     height: 91vh; /* leave space for nav bar */
     max-width: 100%; /* prevents horizontal overflow */
-    background-color: #536773;
+    background-color: #172D3D;
 }
 
 #opening {
     margin-top: 35vh;
-    margin-bottom: 20px;
-    font-size: 5em;
+    margin-bottom: 2vh;
+    width: 100%;
     color: white;
-    text-align: center;
 }
 
 #about {
-    font-size: 4em;
-    color: white;
     text-align: center;
-    width: 500px;
+    width: 100%;
+    color: white;
 }
 
 header {
@@ -52,7 +82,7 @@ header {
     padding: 5px 100px;
     transition: 0.6s;
     background-color: rgba(227, 255, 249, 0.2);
-    border-bottom: 3px solid rgb(74, 180, 255);
+    border-bottom: 3px solid #B6A48F;
     z-index: 10000; /* ensure header always visible */
 }
 

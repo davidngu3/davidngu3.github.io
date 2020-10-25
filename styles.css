@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+}
+
+::-webkit-scrollbar { 
+    display: none;  /* Hide scrollbar for Safari and Chrome */
 }
 
 h1 {
@@ -20,12 +26,6 @@ html {
 body {
     background: #000;
     min-height: 400vh;  /* mininimum height is 2x the screen size. */
-    -ms-overflow-style: none;  /* Hide scrollbar for IE */
-    scrollbar-width: none;  /* Hide scrollbar for Firefox */
-}
-
-::-webkit-scrollbar { 
-    display: none;  /* Hide scrollbar for Safari and Chrome */
 }
 
 .typed-text {

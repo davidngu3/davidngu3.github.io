@@ -20,6 +20,12 @@ html {
 body {
     background: #000;
     min-height: 400vh;  /* mininimum height is 2x the screen size. */
+    -ms-overflow-style: none;  /* Hide scrollbar for IE */
+    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}
+
+.container::-webkit-scrollbar { 
+    display: none;  /* Hide scrollbar for Safari and Chrome */
 }
 
 .typed-text {

@@ -81,7 +81,7 @@ header {
     align-items: center;
     padding: 5px 100px;
     transition: 0.6s;
-    background-color: #2e2e2a;
+    background-color: rgba(227, 255, 249, 0.2);
     border-bottom: 3px solid #B6A48F;
     z-index: 10000; /* ensure header always visible */
 }

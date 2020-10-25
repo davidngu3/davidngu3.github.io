@@ -16,16 +16,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: url(images/banner-bg.jpg);
-    background-size: cover;   
+    width: 100vw;
+    height: 91vh; /* leave space for nav bar */
+    max-width: 100%; /* prevents horizontal overflow */
+    background-color: #536773;
+
 }
 
 header {
     position: relative;
     margin-top: auto;
     left: 0;
+    height: 9vh;
     width: 100vw;
     max-width: 100%;
     display: flex;
@@ -38,15 +40,8 @@ header {
     z-index: 10000; /* ensure header always visible */
 }
 
-#profile {
-    margin-top: 200px;
-    border-radius: 50%; /* circular picture */
-    max-width: 100%; /* scale down if has to, but never larger than original size */
-    height: auto;
-    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey; 
-}
-
 #opening {
+    margin-top: 400px;
     color: white;
     text-align: center;
 }

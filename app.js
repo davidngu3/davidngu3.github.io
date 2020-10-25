@@ -12,6 +12,11 @@ window.onload = () => {
     let textArrayIndex = 0;
     let charIndex = 0;
 
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
+
     window.addEventListener("scroll", function() {
         var header = document.getElementById("header");
         header.classList.toggle("sticky", window.scrollY > navbarOffset);

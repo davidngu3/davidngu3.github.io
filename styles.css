@@ -5,13 +5,16 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
-body {
-    background: #000;
-    min-height: 200vh;  /* mininimum height is 2x the screen size. */
+html {
+    scroll-behavior: smooth;
 }
 
-.banner
-{
+body {
+    background: #000;
+    min-height: 400vh;  /* mininimum height is 2x the screen size. */
+}
+
+.banner {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,12 +23,10 @@ body {
     height: 91vh; /* leave space for nav bar */
     max-width: 100%; /* prevents horizontal overflow */
     background-color: #536773;
-
 }
 
 header {
     position: relative;
-    margin-top: auto;
     left: 0;
     height: 9vh;
     width: 100vw;
@@ -61,8 +62,9 @@ header.sticky {
 
 .navlist {
     position: relative;
-    display: flex; 
-    justify-content: center;
+    display: flex;
+    width: 50vw; 
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -84,4 +86,5 @@ header.sticky {
 header.sticky ul li a {
     color: #000;
 }
+
 

@@ -89,6 +89,16 @@ body {
     height: 50vh;
 }
 
+.cardImg {
+    width: 40vw;
+    height: 35vh;
+}
+
+.gitImg {
+    width: 5vw;
+    height: 5vh;
+}
+
 #opening {
     margin-top: 35vh;
     margin-bottom: 2vh;

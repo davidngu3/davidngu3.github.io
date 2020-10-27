@@ -23,37 +23,46 @@ window.onload = () => {
     // Web project
     projects["quote-generator"] = {
         name: "Quote Generator",
-        image: "images/quote.jpg",
-        description: "A website which displays and animates some of my favourite quotes. \
-        A project based on FreeCodeCamp's 'Responsive Web Design' certification. \
-        Incorporates beginner to intermediate level HTML, CSS and JS.",
-        link: "https://github.com/davidngu3/random-quote-generator"
+        image: "images/quote.png",
+        description: "A website which displays some of my favourite quotes. \
+        Features twitter webhook and changing background transitions.",
+        link: "https://davidngu3.github.io/random-quote-generator/",
+        gitlink: "https://github.com/davidngu3/random-quote-generator" 
     };
 
     // Web project 2
     projects["js-calculator"] = {
         name: "js-calculator",
-        image: "images/js-calculator.jpg",
-        description: "A pure html/js/css calculator to practice web dev fundamentals",
-        link: "https://github.com/davidngu3/js-calculator"
+        image: "images/js-calculator.png",
+        description: "A pure html/js/css calculator \
+        featuring all basic mathematical operators, decimal point system, \
+        sign inversion and backspace/clear functionality. \
+        Warning: Do not divide by zero!",
+        link: "https://davidngu3.github.io/js-calculator/",
+        gitlink: "https://github.com/davidngu3/js-calculator"
     };
 
     // Game project
     projects["popa"] = {
         name: "Popa",
-        image: "images/popa.jpg",
-        description: "Winner for Google DSC Retro Game Hackathon. \
-        Popa is a game where the player must shoot incoming baddies which come faster and faster! \
-        Inspired by old school retro games complete with sound effects and pixel art",
-        link: "https://github.com/davidngu3/Popa"
+        image: "images/popa.png",
+        description: "Winner of Google DSC Retro Game Hackathon. \
+        Inspired by old-school arcade games Space Invaders and Tetris, \
+        the player must shoot incoming bats(!) \
+        Complete with self-produced sound effects and pixel art. \
+        Ready player one?",
+        link: "https://davidngu3.github.io/Popa/",
+        gitlink: "https://github.com/davidngu3/Popa"
     };
 
     // Reserved for website
     projects["website"] = {
         name: "Personal Website",
-        image: "images/website.jpg",
-        description: "You're looking at it",
-        link: "https://github.com/davidngu3/davidngu3.github.io"
+        image: "images/website.png",
+        description: "Personal website to showcase software development background. \
+        Built with pure HTML/CSS/JS/💖",
+        link: "https://davidngu3.github.io/",
+        gitlink: "https://github.com/davidngu3/davidngu3.github.io"
     };
 
     // Sticky navbar logic
@@ -111,22 +120,31 @@ window.onload = () => {
         var image = document.createElement("img");
         image.src = project["image"];
 
-        var description = document.createElement("div");
+        var descriptionBox = document.createElement("div");
+        descriptionBox.className = "cardDescriptionBox";
+
+        var description = document.createElement("p");
         description.textContent = project["description"];
-        description.className = "cardDescription";
         
+        var link = document.createElement("a");
+        link.href = project["link"];
+        var linkImg = document.createElement("img");
+        linkImg.src = "images/arrow.png";
+        link.appendChild(linkImg);
+
         var gitLink = document.createElement("a");
         var gitImg = document.createElement("img");
         gitImg.src = "images/git.png";
-        gitLink.href = project["link"];
-        gitLink.className = "cardGitLink";
-        gitImg.className = "cardGitImage";
+        gitLink.href = project["gitlink"];
         gitLink.appendChild(gitImg);
+
+        descriptionBox.appendChild(description);
+        descriptionBox.appendChild(link);
+        descriptionBox.appendChild(gitLink);
 
         card.appendChild(title);
         card.appendChild(image);
-        card.appendChild(description);
-        card.appendChild(gitLink);
+        card.appendChild(descriptionBox);
 
         projectsDiv.appendChild(card);
     }

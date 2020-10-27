@@ -77,19 +77,21 @@ body {
     padding: 100px;
     width: 100vw;
     max-width: 100%;
-    height: 300vh;
-    background-color: #fff;
+    height: 400vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-image: url("images/blueprint.png");
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 34vw;
-    height: 50vh;
+    background-color: #e0e0e0;
+    padding: 0.5vw 1vw 2vw 1vw;
+    width: 30vw;
+    height: 70vh;
 }
 
 .card > h2 {
@@ -101,10 +103,11 @@ body {
 }
 
 .card > img {
+    flex-grow: 1;
     margin: 10px;
     width: 100% - 80px;
-    height: 65%;
-    margin: 20px 40px;
+    height: 55%;
+    margin: 10px 10px;
     border: 1px solid black;
     border-collapse: collapse;
 }
@@ -113,7 +116,7 @@ body {
     display: flex;
     flex-direction: row;
     height: auto;
-    padding: 10px;
+    padding: 5px;
     justify-content: space-between;
     align-items: center;
 }

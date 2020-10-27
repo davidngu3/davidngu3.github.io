@@ -170,6 +170,7 @@ header.sticky {
     position: fixed;
     top: 0;
     background: #fff;
+    opacity: 90%;
 }
 
 .navlist {

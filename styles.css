@@ -92,6 +92,8 @@ body {
     padding: 1vw 1vw 2vw 1vw;
     width: 30vw;
     height: 70vh;
+    border: 2px solid black;
+    box-shadow: 1.5vw 1.5vw rgba(33, 33, 33, 0.7);
 }
 
 .card > h2 {

@@ -20,13 +20,25 @@ window.onload = () => {
     /* projects page variables */
     const projects = {};
 
+    // Web project
+    projects["quote-generator"] = {
+        name: "Quote Generator",
+        image: "images/quote.jpg",
+        description: "A website which displays and animates some of my favourite quotes. \
+        A project based on FreeCodeCamp's 'Responsive Web Design' certification. \
+        Incorporates beginner to intermediate level HTML, CSS and JS.",
+        link: "https://github.com/davidngu3/random-quote-generator"
+    };
+
+    // Web project 2
     projects["js-calculator"] = {
         name: "js-calculator",
         image: "images/js-calculator.jpg",
         description: "A pure html/js/css calculator to practice web dev fundamentals",
         link: "https://github.com/davidngu3/js-calculator"
     };
-    
+
+    // Game project
     projects["popa"] = {
         name: "Popa",
         image: "images/popa.jpg",
@@ -36,22 +48,7 @@ window.onload = () => {
         link: "https://github.com/davidngu3/Popa"
     };
 
-    projects["etch"] = {
-        name: "Etch-A-Sketch",
-        image: "images/etch.jpg",
-        description: "An etch-a-sketch emulation to practice web-dev fundamentals including pseudo-elements and CSS flexbox",
-        link: "https://github.com/davidngu3/etch-a-sketch"
-    };
-
-    projects["quote-generator"] = {
-        name: "Random Quote Generator",
-        image: "images/quote.jpg",
-        description: "A website which displays and animates some of my favourite quotes. \
-        A project based on FreeCodeCamp's 'Responsive Web Design' certification. \
-        Incorporates beginner to intermediate level HTML, CSS and JS.",
-        link: "https://github.com/davidngu3/random-quote-generator"
-    };
-
+    // Reserved for website
     projects["website"] = {
         name: "Personal Website",
         image: "images/website.jpg",
@@ -108,13 +105,11 @@ window.onload = () => {
         var card = document.createElement("div");
         card.className = "card";
 
-        var title = document.createElement("div");
+        var title = document.createElement("h2");
         title.textContent = project["name"];
-        title.className = "cardTitle";
 
         var image = document.createElement("img");
         image.src = project["image"];
-        image.className = "cardImg";
 
         var description = document.createElement("div");
         description.textContent = project["description"];

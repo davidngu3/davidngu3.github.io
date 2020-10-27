@@ -74,6 +74,7 @@ body {
 }
 
 .projects {
+    padding: 100px;
     width: 100vw;
     max-width: 100%;
     height: 300vh;
@@ -85,13 +86,20 @@ body {
 }
 
 .card {
-    width: 40vw;
+    width: 30vw;
     height: 50vh;
 }
 
-.cardImg {
-    width: 40vw;
-    height: 35vh;
+.card > img {
+    display: block;
+    width: 100%;
+    height: 75%;
+}
+
+.card > h2 {
+    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 100;
 }
 
 .gitImg {

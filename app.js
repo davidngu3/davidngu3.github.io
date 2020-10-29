@@ -113,6 +113,11 @@ window.onload = () => {
         // wrapper div
         var card = document.createElement("div");
         card.className = "card";
+        card.setAttribute("data-aos", "fade-down-right");
+        card.setAttribute("data-aos-offset", "200");
+        card.setAttribute("data-aos-delay", "50");
+        card.setAttribute("data-aos-duration", "1000");
+        card.setAttribute("data-aos-easing", "ease-in-out-sine");
 
         var title = document.createElement("h2");
         title.textContent = project["name"];

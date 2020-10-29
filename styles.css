@@ -217,4 +217,18 @@ header.sticky ul li a {
     color: #000;
 }
 
+.education {
+    padding: 100px;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #B6A48F;
+}
 
+.contact {
+    padding: 100px;
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+}

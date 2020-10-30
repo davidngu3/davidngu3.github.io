@@ -218,11 +218,54 @@ header.sticky ul li a {
 }
 
 .education {
-    padding: 100px;
+    padding: 10vh 10vw;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
     background-color: #B6A48F;
+}
+
+#edu-container {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+}
+
+#timeline {
+    position: relative;
+    width: 30%;
+    background-color: blue;
+}
+
+#timeline > div {
+    font-size: 2rem;
+}
+
+.item1 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.item2 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+}
+
+.itemLast {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#eventDescription {
+    position: relative;
+    width: 45%;
+    background-color: pink;
 }
 
 .contact {

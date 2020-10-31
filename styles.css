@@ -217,55 +217,53 @@ header.sticky ul li a {
     color: #000;
 }
 
-.education {
-    padding: 10vh 10vw;
+.experience {
+    padding: 20vh 15vw;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
     background-color: #B6A48F;
 }
 
-#edu-container {
+#exp-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
     background: white;
     width: 100%;
     height: 100%;
-    border: 3px solid black;
+    border: 1px solid black;
 }
 
-#timeline {
-    position: relative;
-    width: 30%;
-    background-color: blue;
+.expcard {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
 }
 
-#timeline > div {
-    font-size: 2rem;
+.expcard > img {
+    height: 100%;
 }
 
-.item1 {
-    position: absolute;
-    top: 5%;
-    right: 5%;
+.descBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1vw 2vw;
+    flex-grow: 1;
 }
 
-.item2 {
-    position: absolute;
-    top: 50%;
-    right: 5%;
+.descBox > h2 {
+    font-size: 3.5vh;
+    font-weight: 20;
 }
 
-.itemLast {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-}
-
-#eventDescription {
-    position: relative;
-    width: 45%;
-    background-color: pink;
+.descBox > p {
+    font-size: 2vh;
+    padding: 1.5vh 0vh;
 }
 
 .contact {
@@ -275,3 +273,4 @@ header.sticky ul li a {
     height: 100vh;
     background-color: #ccc;
 }
+

@@ -65,6 +65,30 @@ window.onload = () => {
         gitlink: "https://github.com/davidngu3/davidngu3.github.io"
     };
 
+    // Experience page variables
+    const experiences = {};
+
+    // Education 
+    experiences["monash"] = {
+        name: "Monash University",
+        title: "Bachelor of Computer Science",
+        date: "Feb 2018",
+        description: "Expected Grad. 2022",
+        icon: "images/monash.png"
+    }
+
+    // Work experience 1
+    experiences["agilent"] = {
+        name: "Agilent Technologies",
+        title: "Software Engineer Intern",
+        date: "Feb 2020",
+        description: "Expected Finish. 2022",
+        icon: "images/agilent.png"
+    }
+
+    // Work experience 2
+    // TBD
+
     // Sticky navbar logic
     window.addEventListener("scroll", function() {
         var header = document.getElementById("header");
@@ -154,6 +178,45 @@ window.onload = () => {
         projectsDiv.appendChild(card);
     }
 
+    // Experience page logic
+    var expContainer = document.getElementById("exp-container");
+    
+    for (var key of Object.keys(experiences)) {
+        var experience = experiences[key];
+
+        // wrapper div
+        var expCard = document.createElement("div");
+        expCard.className = "expcard";
+
+        // left box
+        var icon = document.createElement("img");
+        icon.src = experience["icon"];
+
+        var name = document.createElement("h2");
+        name.textContent = experience["name"];
+
+        // right box
+        var title = document.createElement("h2");
+        title.textContent = experience["title"];
+
+        var date = document.createElement("p");
+        date.textContent = experience["date"];
+
+        var desc = document.createElement("p");
+        desc.textContent = experience["description"];
+
+        var descriptionBox = document.createElement("div");
+        descriptionBox.className = "descBox";
+        descriptionBox.appendChild(date);
+        descriptionBox.appendChild(name);
+        descriptionBox.appendChild(title);
+        descriptionBox.appendChild(desc);
+
+        expCard.appendChild(icon);
+        expCard.appendChild(descriptionBox);
+
+        expContainer.appendChild(expCard);
+    }
 }
 
 

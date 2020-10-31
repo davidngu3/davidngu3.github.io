@@ -259,11 +259,13 @@ header.sticky ul li a {
 .descBox > h2 {
     font-size: 3.5vh;
     font-weight: 20;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .descBox > p {
     font-size: 2vh;
     padding: 1.5vh 0vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .contact {

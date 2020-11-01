@@ -82,7 +82,7 @@ window.onload = () => {
         name: "Agilent Technologies",
         title: "Software Engineer Intern",
         date: "Feb 2020",
-        description: "Expected Finish. 2022",
+        description: "12 month internship",
         icon: "images/agilent.png"
     }
 

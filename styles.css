@@ -225,6 +225,11 @@ header.sticky ul li a {
     background: url("images/modernabstract.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    
+    /* card.setAttribute("data-aos-offset", "200");
+    card.setAttribute("data-aos-delay", "50");
+    card.setAttribute("data-aos-duration", "1000");
+    card.setAttribute("data-aos-easing", "ease-in-out-sine"); */
 }
 
 #exp-container {

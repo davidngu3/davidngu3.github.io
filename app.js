@@ -156,6 +156,7 @@ window.onload = () => {
         description.textContent = project["description"];
         
         var link = document.createElement("a");
+        link.setAttribute("target", "_blank");
         link.href = project["link"];
         var linkImg = document.createElement("img");
         linkImg.src = "images/arrow.png";
@@ -165,6 +166,7 @@ window.onload = () => {
         var gitImg = document.createElement("img");
         gitImg.src = "images/git.png";
         gitLink.href = project["gitlink"];
+        gitLink.setAttribute("target", "_blank");
         gitLink.appendChild(gitImg);
 
         descriptionBox.appendChild(description);

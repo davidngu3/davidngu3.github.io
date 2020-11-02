@@ -270,12 +270,40 @@ header.sticky ul li a {
 }
 
 .contact {
-    padding: 100px;
+    padding: 10% 20%;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
     background: url("images/orangesquiggly.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+#buttonbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+.contact > p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 5vmax;
+}
+
+#buttonbox > a {
+    font-size: 10vmax;
+    text-decoration: none;
+    color: white;
+}
+
+#buttonbox > a:hover {
+    color: rgb(255, 255, 255, 0.5);
+}

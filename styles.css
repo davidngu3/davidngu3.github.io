@@ -323,7 +323,7 @@ header.sticky ul li a {
 #buttonbox > a {
     font-size: 10vmax;
     text-decoration: none;
-    color: #ed974c;
+    color: #E6B453;
 }
 
 #buttonbox > a:hover {
@@ -347,5 +347,5 @@ header.sticky ul li a {
 }
 
 .orange {
-    color:#ed974c;
+    color:#E6B453;
 }

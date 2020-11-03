@@ -211,7 +211,7 @@ header.sticky {
 }
 
 .navlist li a:hover {
-    font-size: 2vw;
+    font-size: 1.2vw;
 }
 
 header.sticky ul li a {
@@ -323,11 +323,11 @@ header.sticky ul li a {
 #buttonbox > a {
     font-size: 10vmax;
     text-decoration: none;
-    color: black;
+    color: orange;
 }
 
 #buttonbox > a:hover {
-    color: orange;
+    color: #cf7527;
 }
 
 .seemore {

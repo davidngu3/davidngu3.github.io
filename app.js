@@ -200,6 +200,7 @@ window.onload = () => {
         // right box
         var title = document.createElement("h2");
         title.textContent = experience["title"];
+        title.className = "orange";
 
         var date = document.createElement("p");
         date.textContent = experience["date"];

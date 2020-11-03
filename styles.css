@@ -313,7 +313,11 @@ header.sticky ul li a {
     font-family: 'Permanent Marker', sans-serif;
     color: black;
     font-size: 5vmax;
-    height: auto;
+}
+
+#contact-container > p > span {
+    font-family: 'Permanent Marker', sans-serif;
+    font-size: 5vmax;
 }
 
 #buttonbox > a {
@@ -323,7 +327,7 @@ header.sticky ul li a {
 }
 
 #buttonbox > a:hover {
-    color: #0f3166;
+    color: orange;
 }
 
 .seemore {

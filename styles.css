@@ -94,7 +94,7 @@ body {
     width: 70vmin;
     height: 80vmin;
     border: 2px solid black;
-    box-shadow: 1.5vw 1.5vw rgba(33, 33, 33, 0.7);
+    box-shadow: 1.5vw 1.5vw rgba(33, 33, 33, 1);
 }
 
 .card > h2 {
@@ -238,13 +238,18 @@ header.sticky ul li a {
     background: white;
     width: 100%;
     height: 100%;
+    box-shadow: 1.5vw 1.5vw rgba(33, 33, 33, 1);
+    border: 4px solid black;
 }
 
 .expcard {
     height: 50%;
     display: flex;
     flex-direction: row;
-    border: 1px solid;
+}
+
+.expcard:nth-child(odd) {
+    border-bottom: 1px solid;
 }
 
 .expcard > img {
@@ -273,17 +278,26 @@ header.sticky ul li a {
 }
 
 .contact {
-    padding: 10% 20%;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
-    background: url("images/orangesquiggly.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url("images/blueprint.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-container {
+    width: 60vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    padding: 5vh 5vw;
+    border: 4px solid black;
+    box-shadow: 1.5vw 1.5vw rgba(33, 33, 33, 1);
 }
 
 #buttonbox {
@@ -295,20 +309,21 @@ header.sticky ul li a {
     width: 100%;
 }
 
-.contact > p {
-    font-family: 'Changa', sans-serif;
-    color: white;
+#contact-container > p {
+    font-family: 'Permanent Marker', sans-serif;
+    color: black;
     font-size: 5vmax;
+    height: auto;
 }
 
 #buttonbox > a {
     font-size: 10vmax;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 #buttonbox > a:hover {
-    color: rgb(255, 255, 255, 0.5);
+    color: #0f3166;
 }
 
 .seemore {

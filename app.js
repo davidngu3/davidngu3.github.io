@@ -158,16 +158,14 @@ window.onload = () => {
         var link = document.createElement("a");
         link.setAttribute("target", "_blank");
         link.href = project["link"];
-        var linkImg = document.createElement("img");
-        linkImg.src = "images/arrow.png";
-        link.appendChild(linkImg);
+        link.className = "fas fa-arrow-circle-right";
+        link.classList.add("cardLink")
 
         var gitLink = document.createElement("a");
-        var gitImg = document.createElement("img");
-        gitImg.src = "images/git.png";
         gitLink.href = project["gitlink"];
         gitLink.setAttribute("target", "_blank");
-        gitLink.appendChild(gitImg);
+        gitLink.className = "fab fa-github";
+        gitLink.classList.add("cardLink");
 
         descriptionBox.appendChild(description);
         descriptionBox.appendChild(link);

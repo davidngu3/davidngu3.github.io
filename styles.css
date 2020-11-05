@@ -349,3 +349,13 @@ header.sticky ul li a {
 .orange {
     color:#E6B453;
 }
+
+.cardLink {
+    color: #E6B453;
+    text-decoration: none;
+    font-size: 3vmax;
+}
+
+.cardLink:hover {
+    color: #cf7527;
+}

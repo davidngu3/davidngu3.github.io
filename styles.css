@@ -223,7 +223,7 @@ header.sticky ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20vh 15vw;
+    padding: 15vh 15vw;
     width: 100vw;
     max-width: 100%;
     height: 100vh;
@@ -243,13 +243,13 @@ header.sticky ul li a {
 }
 
 .expcard {
-    height: 50%;
+    height: 33.3333333%;
     display: flex;
     flex-direction: row;
 }
 
-.expcard:nth-child(odd) {
-    border-bottom: 1px solid;
+.expcard:nth-child(even) {
+    background-color: #FAF9F6;
 }
 
 .expcard > img {
@@ -267,7 +267,7 @@ header.sticky ul li a {
 
 .descBox > h2 {
     font-size: 2.8vmin;
-    font-weight: 20;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -289,7 +289,7 @@ header.sticky ul li a {
 
 #contact-container {
     width: 60vw;
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,7 +335,7 @@ header.sticky ul li a {
     color: white;
     font-family: 'Montserrat';
     font-size: 1vmax;
-    bottom: 11vh;
+    bottom: 6vh;
     letter-spacing: 0.3vmax;
 }
 
@@ -343,7 +343,7 @@ header.sticky ul li a {
     color: white;
     position: absolute;
     font-size: 2vmax;
-    bottom: 5vh;
+    bottom: 1.5vh;
 }
 
 .orange {

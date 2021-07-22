@@ -5,7 +5,7 @@ window.onload = () => {
     // Dynamic typing variables
     var typedTextSpan = document.querySelector(".typed-text");
     var cursorSpan = document.querySelector(".cursor");
-    const textArray = ["CS Student", "SoftEng Intern", "Lifelong Learner", "Game Dev Hobbyist", "Design Enthusiast", "Curious Human", "Tea Snob"]
+    const textArray = [" Computer Science Student", " Software Engineer Intern", " Web Design Enthusiast", " 'We can walk it' kind of person", "lways wearing a backpack", " Terrible Parker :(", " Big fan of sunscreen"]
     const typingDelay = 160;
     const erasingDelay = 70;
     const newTextDelay = 2000;
@@ -73,7 +73,7 @@ window.onload = () => {
         name: "Monash University",
         title: "Bachelor of Computer Science",
         date: "Feb 2018",
-        description: "Expected Grad. 2022",
+        description: "Expected Grad. Nov 2022",
         icon: "images/monash.png"
     }
 
@@ -81,13 +81,19 @@ window.onload = () => {
     experiences["agilent"] = {
         name: "Agilent Technologies",
         title: "Software Engineer Intern",
-        date: "Feb 2020",
+        date: "Feb 2020 - Feb 2021",
         description: "12 month internship",
         icon: "images/agilent.png"
     }
 
     // Work experience 2
-    // TBD
+    experiences["nab"] = {
+        name: "National Australia Bank",
+        title: "Software Engineer Intern",
+        date: "July 2021 - Present",
+        description: "12 month internship",
+        icon: "images/nab.png"
+    }
 
     // Sticky navbar logic
     window.addEventListener("scroll", function() {

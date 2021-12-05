@@ -20,6 +20,16 @@ window.onload = () => {
     /* projects page variables */
     const projects = {};
 
+    // Mobile project 1
+    projects["pi-app"] = {
+        name: "Pi Digits Trainer",
+        image: "images/piapp.png",
+        description: "A mobile app for memorising the first 100 digits of pi. \
+        Built with React Native and hosted on Expo",
+        link: "https://expo.dev/@davidngu3/pi-trainer",
+        gitlink: "https://github.com/davidngu3/pi-trainer" 
+    };
+
     // Web project
     projects["quote-generator"] = {
         name: "Quote Generator",
